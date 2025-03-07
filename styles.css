@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #333;
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Navbar Moderno */
+#navbar {
+    width: 98%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    text-align: right;
+    font-size: 18px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+#navbar a {
+    color: #7F7059;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.8s;
+}
+
+#navbar a:hover {
+    color: #17a2b8;
+}
+
+/* Secciones */
+section {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 0px;
+    text-align: center;
+    /*background: white;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 95%;
+}
+
+.quote {
+    color: #6c757d;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#welcome-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5e2121;/*#7F7059;*/
+    border-radius: 10px;
+}
+/* Proyectos */
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Sección de texto */
+.text-section {
+    flex: 1; /* Ocupa la mitad del espacio */
+    padding: 20px;
+    max-width: 40%; /* Controla el ancho del texto */
+    margin-top: -50px;
+}
+
+/* Sección de imágenes */
+.image-grid {
+    display: flex; /* Mantiene las imágenes en una fila */
+    justify-content: center; /* Centra las imágenes */
+    align-items: center;
+    flex: 2; /* Ocupa más espacio que el texto */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+/* Estilos de las imágenes */
+.image-grid img {
+    width: 180px; /* Ajusta el ancho */
+    height: 230px; /* Ajusta la altura */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+    border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    color: #7F7059;
+    font-size: 18px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #dee2e6;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #7F7059;
+    font-size: 30px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #17a2b8;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero {
+  flex: 1 1 60%;
+  background-color: #f0f0f0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.sections {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+  padding: 15px;
+  color: white;
+  position: relative; /* Añadido para posicionar el icono */
+}
+
+.section-blue {
+  background-color: #852e2e;
+  /*background-color: #D0BFA5;*/
+}
+
+.section-dark-blue {
+  /*background-color: #ECDAC1;*/
+  background-color: #ac3a3a;
+}
+
+.section-icon {
+  width: 75px; /* Ajusta el tamaño del icono */
+  height: auto;
+  position: center; /* Posiciona el icono dentro de la sección */
+  top: 20px; /* Ajusta la posición vertical */
+  left: 20px; /* Ajusta la posición horizontal */
+  border-radius:  50%;
+}
+
+.texto {
+  font-family: sans-serif;
+  font-size: 95%;
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    #navbar a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Secciones generales */
+    section {
+        margin-top: 60px;
+        width: 90%;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+
+    #welcome-section {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    /* Diseño de contenedor principal */
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .text-section {
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .image-grid {
+        flex-wrap: wrap; /* Permite que las imágenes se acomoden en varias líneas */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .image-grid img {
+        width: 90%; /* Hace que las imágenes ocupen más espacio en pantalla */
+        height: auto;
+    }
+
+    /* Secciones apiladas */
+    .container {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex: none;
+        width: 100%;
+    }
+
+    .sections {
+        flex-direction: column;
+    }
+
+    .section {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section-icon {
+        width: 50px;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 25px;
+    }
+}
+
+
+
